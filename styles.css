@@ -1,0 +1,10 @@
+/* El arte se conserva a escala proporcional: el frame original de Figma mide 1728 × 7027. */
+:root { color-scheme: dark; background: #000; }
+* { box-sizing: border-box; }
+html { min-width: 320px; background: #000; }
+body { margin: 0; min-width: 320px; background: #000; }
+.figma-page { width: 100%; max-width: 1728px; margin: 0 auto; line-height: 0; overflow: hidden; background: #000; }
+.figma-page img { display: block; width: 100%; height: auto; margin: 0; }
+
+/* La pieza se adapta fluidamente al ancho disponible sin alterar relaciones, tipografía o espaciados. */
+@media (max-width: 1728px) { .figma-page { max-width: 100%; } }
